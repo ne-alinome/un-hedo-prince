@@ -1,10 +1,6 @@
-                                                                       O. Wilde [O. Wilde]
-
-
-                                      Un Hedo Prince
-
-                                      ex Oscar Wilde
-
+= Un Hedo Prince (e-libri skemo {revdate})
+:author: Oscar Wilde; Glosa translati ex Wendy Ashby
+:revdate: 2018-11-26
 
 Alti supra u polita, epi un alti kolumni, pa sta u statua de un Hedo Prince. An pa es holo
 ge-tegu per plu tenu folia de kriso. An plu oku pa es bi brilo safira; e u mega rubi-li pa
@@ -311,10 +307,7 @@ Angeli. E un Angeli pa fero ad An u plumba kardia e u morta avi.
 “Tu pa sofi elekti,” pa dice Teo. “Ka in mi horti de Paradisi u-ci pusi avi fu kanta
 panto-tem; e in mi polita de kriso un Hedo Prince fu lauda mi.”
 
-
-
-
-                                     Un Egoisti Giga
+== Un Egoisti Giga
 
 Singu po-meso-di, tem mu ki ex sko-do; plu infanti pa ki e sporta in horti de u Giga.
 
@@ -335,11 +328,7 @@ pa vide plu infanti sporta in an horti.
 de sporta in id exklude mi auto.” Seqe-co, an pa tekto u fo alti mura peri id; e plu
 monstra un info-taba.
 
-
-                                    PLU TRANSGRESI-PE
-                                         FU GENE
-                                           PUNI
-
+== Plu Transgresi-pe Fu Gene Puni
 
 An pa es u fo egoisti Giga.
 
@@ -454,6 +443,3 @@ horti; nu-di tu fu veni ko mi a mi horti; id es Paradiso.”
 
 E kron plu infanti pa dromo in un horti u-la po-meso-di; mu pa detekti u Giga kumbe morta
 infra u dendro qi pa es ge-ple per plu leuko flori.
-
-
-
