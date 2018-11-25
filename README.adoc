@@ -1,0 +1,44 @@
+= Un Hedo Prince
+:author: Marcos Cruz (programandala.net)
+:revdate: 2018-11-25
+
+== English
+
+Goal of this project:
+
+Convert Oscar Wilde's _Un Hedo Prince_ (Glosa translation of _A Happy
+Prince_, by Wendy Ashby), into http://asciidoctor[Asciidoctor] format,
+out of the HTML, which is available in http://glosa.org, in order to
+create an b-book in EPUB and other formats.
+
+The messages of the Git repository are in Glosa.
+
+Author's website: http://programandala.net
+
+== Esperanto
+
+Celo de ĉi projekto:
+
+Traduki la Glos-lingvan rakonton _Un Hedo Prince_ (Esperante, _Feliĉa
+princo_), tradukitan de Wendy Ashby el la angla originalo _A Happy
+Prince_ de Oscar Wilde, en
+http://asciidoctor.org[Asciidoctor]-formaton, el la HTML-a versio
+disponebla en http://glosa.org, cele krei EPUB-bitlibron kaj aliajn
+formatojn.
+
+La notoj de la Git-a dosier-deponejo estas Glos-lingvaj.
+
+Ret-paĝaro de la aŬtoro: http://programandala.net
+
+== Glosa
+
+U tende de u-ci projekti:
+
+Muta _Un Hedo Prince_; qi es Glosa translati ex English _A Happy
+Prince_,  ex Wendy Ashby; ad-in http://asciidoctor[Asciidoctor]
+formati; ab u HTML dokumenta; qi existe in http://glosa.org; te face
+un EPUB e-libri e plu plus formati.
+
+Plu nota de Git dokumenta-va es per Glosa.
+
+Inter-reti-lo de autori: http://programandala.net
