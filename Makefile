@@ -2,7 +2,7 @@
 
 # By Marcos Cruz (programandala.net)
 
-# Last modified 201811252354
+# Last modified 201811272355
 # See change log at the end of the file
 
 # ==============================================================
@@ -32,7 +32,9 @@ all: epub html odt pdf
 docbook: $(target)/$(book).adoc.xml
 
 .PHONY: epub
-epub: $(target)/$(book).adoc.xml.pandoc.epub
+epub: \
+	$(target)/$(book).adoc.xml.pandoc.epub \
+	$(target)/$(book).adoc.epub
 
 .PHONY: picdir
 picdir:
@@ -81,6 +83,11 @@ $(target)/$(book).adoc.xml.pandoc.epub: $(target)/$(book).adoc.xml
 		--from=docbook \
 		--to=epub \
 		--output=$@ \
+		$<
+
+$(target)/$(book).adoc.epub: $(book).adoc
+	asciidoctor-epub3 \
+		--destination-dir=$(target) \
 		$<
 
 # ==============================================================
@@ -138,3 +145,5 @@ $(target)/$(book).adoc.xml.pandoc.rtf: $(target)/$(book).adoc.xml
 # Change log
 
 # 2018-11-25: Start. Copy from the project _Plu Glosa Nota_.
+#
+# 2018-11-27: Add asciidoctor-epub3, as an alternative to Pandoc.

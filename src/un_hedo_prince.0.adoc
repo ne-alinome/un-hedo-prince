@@ -2,7 +2,6 @@
 :author: Oscar Wilde; Glosa translati ex Wendy Ashby
 :revdate: 2018-11-26
 :lang: art
-:doctype: book
 :scripts: latin
 :doctitle: Un Hedo Prince
 :producer: Marcos Cruz (alinome.net)
@@ -11,7 +10,5 @@
 // :front-cover-image: image:un_hedo_prince.cover.v00.png[Titula tegi-pagina,1050,1575]
 
 include::un_hedo_prince.1.adoc[]
-
 include::un_hedo_prince.2.adoc[]
-
 include::un_hedo_prince.3.adoc[]
