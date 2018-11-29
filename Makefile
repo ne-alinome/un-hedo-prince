@@ -2,8 +2,13 @@
 
 # By Marcos Cruz (programandala.net)
 
-# Last modified 201811290204
+# Last modified 201811290231
 # See change log at the end of the file
+
+# ==============================================================
+# XXX TODO --
+
+# - Create HTML versions without header and footer.
 
 # ==============================================================
 # Requirements
@@ -32,12 +37,11 @@ docbook: target/$(book).adoc.xml
 .PHONY: epub
 epub: target/$(book).adoc.xml.pandoc.epub
 
-.PHONY: picdir
-picdir:
-	ln --force --symbolic --target-directory=target ../src/pic
-
 .PHONY: html
-html: picdir target/$(book).adoc.html target/$(book).adoc.plain.html target/$(book).adoc.xml.pandoc.html
+html: \
+	target/$(book).adoc.html \
+	target/$(book).adoc.plain.html \
+	target/$(book).adoc.xml.pandoc.html
 
 .PHONY: odt
 odt: target/$(book).adoc.xml.pandoc.odt
@@ -125,6 +129,7 @@ target/$(book).adoc.xml.pandoc.html: target/$(book).adoc.xml
 	pandoc \
 		--from=docbook \
 		--to=html \
+		--standalone \
 		--output=$@ \
 		$<
 
@@ -148,14 +153,11 @@ target/$(book).adoc.pdf: $(book).adoc
 # ==============================================================
 # Convert to RTF
 
-# XXX FIXME -- Both LibreOffice Writer and AbiWord don't read this RTF file
-# properly. The RTF marks are exposed. It seems they don't recognize the format
-# and take it as a plain file.
-
 target/$(book).adoc.xml.pandoc.rtf: target/$(book).adoc.xml
 	pandoc \
 		--from=docbook \
 		--to=rtf \
+		--standalone \
 		--output=$@ \
 		$<
 
@@ -169,4 +171,5 @@ target/$(book).adoc.xml.pandoc.rtf: target/$(book).adoc.xml
 # GraphicsMagick out of a text file.
 #
 # 2018-11-29: Add a pandoc EPUB stylesheet. Don't use asciidoctor-epub3
-# anymore; use only pandoc.
+# anymore; use only pandoc. Fix pandoc's RTF and HTML output. Remove old <pic>
+# directory link, which was used by HTML.
