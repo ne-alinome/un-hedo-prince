@@ -1,6 +1,10 @@
-= Un Hedo Prince (e-libri skemo {revdate}; asciidoctor-epub3 versio)
+= Un Hedo Prince (e-libri skemo {revdate})
 :author: Oscar Wilde; Glosa translati ex Wendy Ashby
+
+:revnumber: 0.0.0
+:revremark: draft
 :revdate: 2018-11-26
+
 :lang: art
 :doctype: book
 :scripts: latin
@@ -8,11 +12,11 @@
 :producer: Marcos Cruz (alinome.net)
 :keywords: Oscar Wilde, Glosa
 :publication-type: book
-:imagesdir: ../target
+:imagesdir: ./images
 
 // Last modified 201811280130
 
-:front-cover-image: image:un_hedo_prince_cover.txt.png[Titula tegi-pagina,1000,1600]
+:front-cover-image: image:un_hedo_prince_cover.txt.png[Titula tegu-pagina,1000,1600]
 
 include::un_hedo_prince.1.adoc[]
 
