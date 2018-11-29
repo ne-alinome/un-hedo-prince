@@ -2,7 +2,7 @@
 
 # By Marcos Cruz (programandala.net)
 
-# Last modified 201811290042
+# Last modified 201811290204
 # See change log at the end of the file
 
 # ==============================================================
@@ -10,7 +10,6 @@
 
 # - make
 # - asciidoctor
-# - asciidoctor-pdf
 # - pandoc
 # - GraphicsMagick
 
@@ -31,9 +30,7 @@ all: epub html odt pdf
 docbook: target/$(book).adoc.xml
 
 .PHONY: epub
-epub: \
-	target/$(book).adoc.xml.pandoc.epub \
-	target/$(book).adoc.epub
+epub: target/$(book).adoc.xml.pandoc.epub
 
 .PHONY: picdir
 picdir:
@@ -74,9 +71,9 @@ target/$(book).adoc.xml: $(book).adoc
 # ==============================================================
 # Convert to EPUB
 
-# NB: Pandoc does not allow EPUB alternative templates using `--data-dir`. The
-# default templates must be modified or redirected instead. They are the
-# following:
+# NB: Pandoc does not allow EPUB alternative templates using `--data-dir` (by
+# default, <~/.pandoc>). The default templates must be modified or redirected
+# instead.  They are the following:
 # 
 # /usr/share/pandoc-1.9.4.2/templates/epub-coverimage.html
 # /usr/share/pandoc-1.9.4.2/templates/epub-page.html
@@ -86,7 +83,7 @@ target/$(book).adoc.xml.pandoc.epub: target/$(book).adoc.xml target/$(book)_cove
 	pandoc \
 		--from=docbook \
 		--to=epub \
-		--epub-stylesheet=src/stylesheets/pandoc.css \
+		--epub-stylesheet=src/stylesheet.css \
 		--epub-cover-image=target/$(book)_cover.txt.png \
 		--output=$@ \
 		$<
@@ -102,6 +99,8 @@ target/$(book)_cover.txt.png: src/$(book)_cover.txt
 		-font Courier \
 		text:$< \
 		$@
+
+# XXX OLD -- asciidoctor-epub3 is not used anymore:
 
 target/$(book).adoc.epub: $(book).adoc target/$(book)_cover.txt.png
 	asciidoctor-epub3 \
@@ -169,4 +168,5 @@ target/$(book).adoc.xml.pandoc.rtf: target/$(book).adoc.xml
 # `$target` variable with a literal. Add a temporary cover, created by
 # GraphicsMagick out of a text file.
 #
-# 2018-11-29: Add a pandoc EPUB stylesheet.
+# 2018-11-29: Add a pandoc EPUB stylesheet. Don't use asciidoctor-epub3
+# anymore; use only pandoc.
