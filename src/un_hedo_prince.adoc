@@ -1,6 +1,6 @@
 = Un Hedo Prince (e-libri skemo {revdate})
 :author: Oscar Wilde; Glosa translati ex Wendy Ashby
-:revdate: 2018-11-26
+:revdate: 2018-11-29
 :lang: art
 :scripts: latin
 :doctitle: Un Hedo Prince
@@ -8,7 +8,7 @@
 :keywords: Oscar Wilde, Glosa
 :publication-type: book
 
-// Last modified 201811280130
+// Last modified 201811291624
 
 == Un Hedo Prince
 
@@ -338,7 +338,9 @@ pa vide plu infanti sporta in an horti.
 de sporta in id exklude mi auto.” Seqe-co, an pa tekto u fo alti mura peri id; e plu
 monstra un info-taba.
 
-== Plu Transgresi-pe Fu Gene Puni
+____
+Plu Transgresi-pe Fu Gene Puni
+____
 
 An pa es u fo egoisti Giga.
 
