@@ -1,6 +1,6 @@
 = Un Hedo Prince (e-libri skemo {revdate})
 :author: Oscar Wilde; Glosa translati ex Wendy Ashby
-:revdate: 2018-11-29
+:revdate: 2019-01-12
 :lang: art
 :scripts: latin
 :doctitle: Un Hedo Prince
@@ -8,7 +8,7 @@
 :keywords: Oscar Wilde, Glosa
 :publication-type: book
 
-// Last modified 201811291624
+// Last modified 201901120254
 
 == Un Hedo Prince
 
@@ -455,3 +455,84 @@ horti; nu-di tu fu veni ko mi a mi horti; id es Paradiso.”
 
 E kron plu infanti pa dromo in un horti u-la po-meso-di; mu pa detekti u Giga kumbe morta
 infra u dendro qi pa es ge-ple per plu leuko flori.
+
+////
+
+// XXX TODO -- Finish typing.
+
+== U Modela Miria Pe
+
+Si u persona ne es pluto; id es no-profito de es u carma andro.
+Fantasi es u privilegi de plu pluto persona;
+ne u profesio de plu minus ergo-pe.
+Plu pove-pe debi es praxi;
+e akti uti-ple e minus fantasi.
+Id es ma-boni de gene u dura in-valuta
+vice es u fascina-pe.
+Plu-ci es plu grandi veri de nu-di bio
+qi Hughie Erskine nuli-kron pa ski.
+Mali-fortuna Hughie!
+Na nece konfesi; an ne pa habe fo mega menta.
+An nuli-kron pa dice uno-ra gravi alo mali tem an holo bio.
+Sed anti-co, an pa es fo kali ko an ciru e bruno kapila;
+an klari ge-seka facia peri-line;
+e an bi polio oku.
+An pa es iso ge-favo ko plu andro de plu gina;
+e an pa pote akti ali-ra exklude gene valuta.
+An patri pa linqi ad an un Equs-milita-pe gladio
+e mo-penta mega bibli de un histori de u Peninsular Milita.
+Hughie pa pende u gladio supra an spekula;
+e pa loka plu bibli epi pla inter 'Ruff Guide' e
+'Bailey Magazine;' e an pa du vive per bi-centi punda qi u palaeo
+parenta sorori don ad an singu anua.
+An pa tenta panto-ra.
+An pa ki a Bursa tem six meno;
+sed qo akti u papilio inter plu Taurus e plu Ursus?
+An pa vende tea u pusi ma-longi tem;
+sed pa este fatiga de Pekoe e Souchong.
+Poi, an pa tenta de vende sika vini.
+U-la pa es no-profito; u vini pa es tro sika.
+A fini an pa esce nuli-ra;
+u delekta non-efekti juve andro ko perfekti facia line e nuli ergo.
+
+// XXX FIXME -- "an pa esce nuli-ra"?
+//
+// esce [1+] = become; get (become)
+//
+// gene [1++G] = become; get (obtain); receive; get (become); get
+// (passive); gets (tense); getting; access (get); accomplish;
+// acquire; come to be; gain; obtain; procure; turn into
+
+E klu ma-mali, an pa filo.
+An pa filo Laura Merton; u fe-fili de u no-dura ergo kolonela;
+qi pa lose an tolera e pepsi intra India;
+e nuli-kron re-detekti mu.
+Laura pa adora an;
+e an pa es prepara de osku fe plu pedi-ve fi.
+Mu pa es u maxi kali bi persona intra London;
+sed ni Hughie ni Laura pa habe klu mono moneta.
+U kolonela fo amo Hughie;
+se an ne pa du dona permito a game promise.
+"Veni a mi kron tu habe deka kilo punda;
+e mi fu re-pensi de id." an pa more dice.
+E Hughie pa feno fo non-hedo tem plu-la di;
+e nece ki a Laura te gene konsola.
+
+// XXX TODO -- "subo" is not in GID:
+
+Mo mana, tem an pa du ki a Holland Park;
+intra qi u Merton famili pa eko;
+an pa visita u boni ami, Alan Trevor.
+Trevor pa es un artisti.
+Veri, ne poli persona es plu artisti plu-ci di;
+sed  an pa es mo.
+Plus-co, an pa es u boni artisti e plu boni artisti
+pa es subo no-freqe plu-ci di.
+Mi auto pa doxo; an pa es u xeno e rudi andro
+ko ge-lentiga facia e u rubi no-ge-kura barba.
+Anti-co, kron an pa du uti u brosa an pa es reali
+un artisti;
+e poli-pe pa merka an plu pikto.
+An pa fo amo Hughie u prima kron an pa vide an.
+
+////
