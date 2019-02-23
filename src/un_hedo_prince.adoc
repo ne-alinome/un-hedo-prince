@@ -1,14 +1,24 @@
-= Un Hedo Prince (e-libri skemo {revdate})
+= Un Hedo Prince
 :author: Oscar Wilde; Glosa translati ex Wendy Ashby
-:revdate: 2019-01-12
 :lang: art
 :scripts: latin
 :doctitle: Un Hedo Prince
-:producer: Marcos Cruz (alinome.net)
-:keywords: Oscar Wilde, Glosa
+:producer: Marcos Cruz (ne.alinome.net)
+:keywords: Oscar Wilde, Wendy Ashby, Glosa
 :publication-type: book
+ifdef::backend-pdf[]
+:doctype: book
+:toc: macro
+:toclevels: 3
+:toc-title: Plu in-ra
+endif::[]
 
-// Last modified 201901122154
+// This file is part of project
+// _Un Hedo Prince_
+// by Marcos Cruz (programandala.net)
+// http://ne.alinome.net
+
+// Last modified 201902231456
 
 == Un Hedo Prince
 
