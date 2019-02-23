@@ -5,7 +5,7 @@
 # by Marcos Cruz (programandala.net)
 # http://ne.alinome.net
 
-# Last modified 201902231515
+# Last modified 201902231523
 # See change log at the end of the file
 
 # ==============================================================
@@ -19,6 +19,7 @@
 # - make
 # - asciidoctor
 # - asciidoctor-pdf
+# - dbtoepub
 # - pandoc
 # - GraphicsMagick
 
@@ -39,7 +40,13 @@ all: epub html odt pdf
 docbook: target/$(book).adoc.xml
 
 .PHONY: epub
-epub: target/$(book).adoc.xml.pandoc.epub
+epub: epubd epubp
+
+.PHONY: epubd
+epubd: target/$(book).adoc.xml.dbtoepub.epub
+
+.PHONY: epubp
+epubp: target/$(book).adoc.xml.pandoc.epub
 
 .PHONY: html
 html: \
@@ -70,13 +77,24 @@ clean:
 	rm -f target/*
 
 # ==============================================================
-# Convert to DocBook
+# Convert Asciidoctor to DocBook
 
 target/$(book).adoc.xml: $(book).adoc
 	asciidoctor --backend=docbook5 --out-file=$@ $<
 
 # ==============================================================
-# Convert to EPUB
+# Convert DocBook to EPUB
+
+# ------------------------------------------------
+# With dbtoepub
+
+target/$(book).adoc.xml.dbtoepub.epub: \
+	target/$(book).adoc.xml
+	dbtoepub \
+		--output $@ $<
+
+# ------------------------------------------------
+# With pandoc
 
 target/$(book).adoc.xml.pandoc.epub: \
 	target/$(book).adoc.xml \
@@ -111,7 +129,7 @@ target/$(book).adoc.epub: $(book).adoc target/$(book)_cover.txt.png
     mv target/$(book).epub $@
 
 # ==============================================================
-# Convert to HTML
+# Convert Asciidoctor to HTML
 
 target/$(book).adoc.plain.html: $(book).adoc
 	adoc \
@@ -122,6 +140,9 @@ target/$(book).adoc.plain.html: $(book).adoc
 
 target/$(book).adoc.html: $(book).adoc
 	adoc --out-file=$@ $<
+
+# ==============================================================
+# Convert DocBook to HTML
 
 target/$(book).adoc.xml.pandoc.html: \
 	target/$(book).adoc.xml \
@@ -135,7 +156,7 @@ target/$(book).adoc.xml.pandoc.html: \
 		$<
 
 # ==============================================================
-# Convert to ODT
+# Convert DocBook to ODT
 
 target/$(book).adoc.xml.pandoc.odt: \
 	target/$(book).adoc.xml \
@@ -149,7 +170,7 @@ target/$(book).adoc.xml.pandoc.odt: \
 		$<
 
 # ==============================================================
-# Convert to PDF
+# Convert Asciidoctor to PDF
 
 target/$(book).adoc.a4.pdf: $(book).adoc
 	asciidoctor-pdf \
@@ -161,7 +182,7 @@ target/$(book).adoc.letter.pdf: $(book).adoc
 		--out-file=$@ $<
 
 # ==============================================================
-# Convert to RTF
+# Convert DocBook to RTF
 
 target/$(book).adoc.xml.pandoc.rtf: \
 	target/$(book).adoc.xml \
@@ -188,4 +209,4 @@ target/$(book).adoc.xml.pandoc.rtf: \
 # directory link, which was used by HTML.
 #
 # 2019-02-23: Update pandoc parameters to version 2.6 and add templates. Make
-# also a letter-size PDF.
+# also a letter-size PDF. Make an alterntive EPUB with dbtoepub.
