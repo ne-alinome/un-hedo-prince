@@ -10,6 +10,12 @@ HTML pages and scanned issues of _Plu Glosa Nota_, which are available
 in http://glosa.org[glosa.org], in order to preserve them and make
 them easier to read.
 
+.Stories
+- The Happy Prince (Un Hedo Prince)
+- The Selfish Giant (Un Egoisti Giga)
+- The Model Millionaire (U Modela Miria Pe)
+- The Sphinx Without A Secret (U Sfinx Minus U Kripto)
+
 Website: http://ne.alinome.net[ne.alinome.net]
 
 Note: The first six messages of the Git repository are in Glosa.
@@ -21,6 +27,12 @@ plu storis de Oscar Wilde, ad-in e-libri in EPUB e hetero norma
 formati, ex plu HTML pagina e ge-skana numera de _Plu Glosa Nota_; qi
 existe in in http://glosa.org[glosa.org], te konserva mu e face mu ma
 facili de lekto.
+
+.Plus stori
+- Un Hedo Prince (The Happy Prince)
+- Un Egoisti Giga (The Selfish Giant)
+- U Modela Miria Pe (The Model Millionaire)
+- U Sfinx Minus U Kripto (The Sphinx Without A Secret)
 
 Inter-reti-lo: http://ne.alinome.net[ne.alinome.net]
 
