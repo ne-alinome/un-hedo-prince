@@ -1,44 +1,27 @@
 = Un Hedo Prince
 :author: Marcos Cruz (programandala.net)
-:revdate: 2018-11-28
+:revdate: 2019-02-23
 
 == English
 
-Goal of this project:
+Goal of this project: Convert Wendy Ashby's Glosa translations of
+Oscar Wilde's stories into EPUB and other standard formats, out of the
+HTML pages and scanned issues of _Plu Glosa Nota_, which are available
+in http://glosa.org[glosa.org], in order to preserve them and make
+them easier to read.
 
-Convert Oscar Wilde's _Un Hedo Prince_ (Glosa translation of _A Happy
-Prince_, by Wendy Ashby), into http://asciidoctor[Asciidoctor] format,
-out of the HTML, which is available in http://glosa.org, in order to
-create an b-book in EPUB and other formats.
+Website: http://ne.alinome.net[ne.alinome.net]
 
-The first six messages of the Git repository are in Glosa.
-
-Author's website: http://programandala.net
-
-== Esperanto
-
-Celo de ĉi projekto:
-
-Traduki la Glos-lingvan rakonton _Un Hedo Prince_ (Esperante, _Feliĉa
-princo_), tradukitan de Wendy Ashby el la angla originalo _A Happy
-Prince_ de Oscar Wilde, en
-http://asciidoctor.org[Asciidoctor]-formaton, el la HTML-a versio
-disponebla en http://glosa.org, cele krei EPUB-bitlibron kaj aliajn
-formatojn.
-
-La unuaj ses notoj de la Git-a dosier-deponejo estas Glos-lingvaj.
-
-Ret-paĝaro de la aŬtoro: http://programandala.net
+Note: The first six messages of the Git repository are in Glosa.
 
 == Glosa
 
-U tende de u-ci projekti:
+U tende de u-ci projekti: Muta plu Glosa translati de Wendy Ashby ex
+plu storis de Oscar Wilde, ad-in e-libri in EPUB e hetero norma
+formati, ex plu HTML pagina e ge-skana numera de _Plu Glosa Nota_; qi
+existe in in http://glosa.org[glosa.org], te konserva mu e face mu ma
+facili de lekto.
 
-Muta _Un Hedo Prince_; qi es Glosa translati ex English _A Happy
-Prince_,  ex Wendy Ashby; ad-in http://asciidoctor[Asciidoctor]
-formati; ab u HTML dokumenta; qi existe in http://glosa.org; te face
-un EPUB e-libri e plu plus formati.
+Inter-reti-lo: http://ne.alinome.net[ne.alinome.net]
 
-Plu sixa proto nota de Git dokumenta-va es per Glosa.
-
-Inter-reti-lo de autori: http://programandala.net
+Nota: Plu sixa proto nota de Git dokumenta-va es per Glosa.
