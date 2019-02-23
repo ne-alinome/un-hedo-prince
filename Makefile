@@ -1,8 +1,11 @@
 # Makefile of _Un Hedo Prince_
 
-# By Marcos Cruz (programandala.net)
+# This file is part of project
+# _Un Hedo Prince_
+# by Marcos Cruz (programandala.net)
+# http://ne.alinome.net
 
-# Last modified 201811290231
+# Last modified 201902231510
 # See change log at the end of the file
 
 # ==============================================================
@@ -15,6 +18,7 @@
 
 # - make
 # - asciidoctor
+# - asciidoctor-pdf
 # - pandoc
 # - GraphicsMagick
 
@@ -57,14 +61,7 @@ cover: target/$(book)_cover.txt.png
 
 .PHONY: clean
 clean:
-	rm -f \
-		target/*.epub \
-		target/*.html \
-		target/*.odt \
-		target/*.pdf \
-		target/*.rtf \
-		target/*.xml \
-		target/*.png
+	rm -f target/*
 
 # ==============================================================
 # Convert to DocBook
@@ -75,24 +72,19 @@ target/$(book).adoc.xml: $(book).adoc
 # ==============================================================
 # Convert to EPUB
 
-# NB: Pandoc does not allow EPUB alternative templates using `--data-dir` (by
-# default, <~/.pandoc>). The default templates must be modified or redirected
-# instead.  They are the following:
-# 
-# /usr/share/pandoc-1.9.4.2/templates/epub-coverimage.html
-# /usr/share/pandoc-1.9.4.2/templates/epub-page.html
-# /usr/share/pandoc-1.9.4.2/templates/epub-titlepage.html
-
-target/$(book).adoc.xml.pandoc.epub: target/$(book).adoc.xml target/$(book)_cover.txt.png
+target/$(book).adoc.xml.pandoc.epub: \
+	target/$(book).adoc.xml \
+	target/$(book)_cover.txt.png \
+	src/pandoc_epub_template.txt \
+	src/stylesheet.css
 	pandoc \
 		--from=docbook \
-		--to=epub \
-		--epub-stylesheet=src/stylesheet.css \
+		--to=epub3 \
+		--template=src/pandoc_epub_template.txt \
+		--css=src/stylesheet.css \
 		--epub-cover-image=target/$(book)_cover.txt.png \
 		--output=$@ \
 		$<
-
-#		--data-dir=src/templates \
 
 target/$(book)_cover.txt.png: src/$(book)_cover.txt
 	gm convert \
@@ -125,10 +117,13 @@ target/$(book).adoc.plain.html: $(book).adoc
 target/$(book).adoc.html: $(book).adoc
 	adoc --out-file=$@ $<
 
-target/$(book).adoc.xml.pandoc.html: target/$(book).adoc.xml
+target/$(book).adoc.xml.pandoc.html: \
+	target/$(book).adoc.xml \
+	src/pandoc_html_template.txt
 	pandoc \
 		--from=docbook \
 		--to=html \
+		--template=src/pandoc_html_template.txt \
 		--standalone \
 		--output=$@ \
 		$<
@@ -136,11 +131,14 @@ target/$(book).adoc.xml.pandoc.html: target/$(book).adoc.xml
 # ==============================================================
 # Convert to ODT
 
-target/$(book).adoc.xml.pandoc.odt: target/$(book).adoc.xml
+target/$(book).adoc.xml.pandoc.odt: \
+	target/$(book).adoc.xml \
+	src/pandoc_odt_template.txt
 	pandoc \
 		+RTS -K15000000 -RTS \
 		--from=docbook \
 		--to=odt \
+		--template=src/pandoc_odt_template.txt \
 		--output=$@ \
 		$<
 
@@ -153,10 +151,13 @@ target/$(book).adoc.pdf: $(book).adoc
 # ==============================================================
 # Convert to RTF
 
-target/$(book).adoc.xml.pandoc.rtf: target/$(book).adoc.xml
+target/$(book).adoc.xml.pandoc.rtf: \
+	target/$(book).adoc.xml \
+	src/pandoc_rtf_template.txt
 	pandoc \
 		--from=docbook \
 		--to=rtf \
+		--template=src/pandoc_rtf_template.txt \
 		--standalone \
 		--output=$@ \
 		$<
@@ -173,3 +174,5 @@ target/$(book).adoc.xml.pandoc.rtf: target/$(book).adoc.xml
 # 2018-11-29: Add a pandoc EPUB stylesheet. Don't use asciidoctor-epub3
 # anymore; use only pandoc. Fix pandoc's RTF and HTML output. Remove old <pic>
 # directory link, which was used by HTML.
+#
+# 2019-02-23: Update pandoc parameters to version 2.6 and add templates.
