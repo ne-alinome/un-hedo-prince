@@ -5,7 +5,7 @@
 # by Marcos Cruz (programandala.net)
 # http://ne.alinome.net
 
-# Last modified 201902231510
+# Last modified 201902231515
 # See change log at the end of the file
 
 # ==============================================================
@@ -51,7 +51,13 @@ html: \
 odt: target/$(book).adoc.xml.pandoc.odt
 
 .PHONY: pdf
-pdf: target/$(book).adoc.pdf
+pdf: pdfa4 pdfletter
+
+.PHONY: pdfa4
+pdfa4: target/$(book).adoc.a4.pdf
+
+.PHONY: pdfletter
+pdfletter: target/$(book).adoc.letter.pdf
 
 .PHONY: rtf
 rtf: target/$(book).adoc.xml.pandoc.rtf
@@ -145,8 +151,14 @@ target/$(book).adoc.xml.pandoc.odt: \
 # ==============================================================
 # Convert to PDF
 
-target/$(book).adoc.pdf: $(book).adoc
-	asciidoctor-pdf --out-file=$@ $<
+target/$(book).adoc.a4.pdf: $(book).adoc
+	asciidoctor-pdf \
+		--out-file=$@ $<
+
+target/$(book).adoc.letter.pdf: $(book).adoc
+	asciidoctor-pdf \
+		--attribute pdf-page-size=letter \
+		--out-file=$@ $<
 
 # ==============================================================
 # Convert to RTF
@@ -175,4 +187,5 @@ target/$(book).adoc.xml.pandoc.rtf: \
 # anymore; use only pandoc. Fix pandoc's RTF and HTML output. Remove old <pic>
 # directory link, which was used by HTML.
 #
-# 2019-02-23: Update pandoc parameters to version 2.6 and add templates.
+# 2019-02-23: Update pandoc parameters to version 2.6 and add templates. Make
+# also a letter-size PDF.

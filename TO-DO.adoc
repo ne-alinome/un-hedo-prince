@@ -14,4 +14,3 @@
   from _Plu Glosa Nota_ 65 (March 1994).
 - Remove the cover made from a text.
 - Make an alternative EPUB with dbtoepub.
-- Make an alternative letter-size PDF.
