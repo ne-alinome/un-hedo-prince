@@ -1,0 +1,14 @@
+= TO-DO of _Un Hedo Prince_
+:author: Marcos Cruz (programandala.net)
+:revdate: 2019-02-23
+
+// This file is part of project
+// _Un Hedo Prince_
+// by Marcos Cruz (programandala.net)
+// http://ne.alinome.net
+
+- Add section "About this e-book"
+- Finish the transcription of "U Modela Miria Pe" (The Model
+  Millionaire) from _Plu Glosa Nota_ 56 (June 1992).
+- Transcribe "U Sfinx Minus U Kripto" (The Sphinx Without A Secret)
+  from _Plu Glosa Nota_ 65 (March 1994).

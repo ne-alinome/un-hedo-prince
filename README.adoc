@@ -2,6 +2,11 @@
 :author: Marcos Cruz (programandala.net)
 :revdate: 2019-02-23
 
+// This file is part of project
+// _Un Hedo Prince_
+// by Marcos Cruz (programandala.net)
+// http://ne.alinome.net
+
 == English
 
 Goal of this project: Convert Wendy Ashby's Glosa translations of
